@@ -1,3 +1,6 @@
-$base : #F7F6F0;
-$darken : darken(#F7F6F0 , 30%);
-$back: darken(#F7F6F0, 40%);
+$base : #f79e3e;
+$darken : darken($base , 20%);
+$back: darken($base, 30%);
+
+$white: #fff;
+$black: #000;
