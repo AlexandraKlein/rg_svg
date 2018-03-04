@@ -8,3 +8,4 @@ Inspired by [FastShell](https://github.com/HosseinKarami/fastshell)
 * `npm install`
 * `gulp`
 
+# rg_svg

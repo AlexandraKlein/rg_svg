@@ -425,6 +425,36 @@ textarea {
   font: inherit;
   /* 2 */ }
 
+.main {
+  background: #ffffff;
+  overflow-x: hidden; }
+  .main #container button {
+    display: block;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 10px 25px;
+    margin: 20px auto;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: #000000; }
+    .main #container button:hover {
+      background: rgba(0, 0, 0, 0.8);
+      cursor: pointer; }
+  .main #container svg {
+    max-height: 100vh;
+    margin: auto;
+    display: block; }
+    .main #container svg path {
+      fill: none;
+      stroke: #000000;
+      stroke-width: 5;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 10; }
+      .main #container svg path.st1 {
+        stroke-width: 2; }
+
 @font-face {
   font-family: 'Font-Name';
   src: url("../fonts/font-name.eot");

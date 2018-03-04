@@ -1,3 +1,45 @@
 .main {
+  $black: #000000;
+  $white: #ffffff;
+  background: $white;
+  overflow-x: hidden;
 
+  #container {
+
+    button {
+      display: block;
+      color: $white;
+      font-size: 16px;
+      padding: 10px 25px;
+      margin: 20px auto;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      background: $black;
+
+      &:hover {
+        background: rgba($black, 0.8);
+        cursor: pointer;
+      }
+    }
+
+    svg {
+      max-height: 100vh;
+      margin: auto;
+      display: block;
+
+      path {
+        fill: none;
+        stroke: $black;
+        stroke-width: 5;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-miterlimit: 10;
+
+        &.st1 {
+          stroke-width: 2;
+        }
+      }
+    }
+  }
 }
