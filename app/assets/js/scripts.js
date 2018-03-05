@@ -11,7 +11,7 @@
   'use strict';
 
   $(function () {
-    //Illustration By Rick Granados
+    //Illustrations By Rick Granados
 
     $.extend( $.easing,
       {
@@ -50,11 +50,11 @@
           .attr('stroke-width', $(this).attr('stroke-width'))
           .attr('stroke-linecap', $(this).attr('stroke-linecap'))
           .insertAfter(this);
-
       });
 
       $(rects).remove();
     }
+
     function replaceLinesWithPaths(parentElement) {
 
       var lines = $(parentElement).find('line');
@@ -66,6 +66,7 @@
 
         var lineX2 = $(this).attr('x2');
         var lineY2 = $(this).attr('y2');
+
 
         var convertedPath = 'M' + lineX1 + ',' + lineY1 + ' ' + lineX2 + ',' + lineY2;
 
@@ -135,7 +136,6 @@
 
       $(ellipses).remove();
     }
-
 
     function replacePolygonsWithPaths(parentElement) {
 
@@ -214,11 +214,11 @@
     }
 
     function startSVGAnimation(parentElement) {
-      drawSVGPaths(parentElement, 250, 500, 25);
+      drawSVGPaths(parentElement, 200, 400, 10);
     }
 
 
-    $('section.svg-container').each(function() {
+    $('.svg-container').each(function() {
         $(this).find('button').click(function() {
           replaceWithPaths($(this).siblings('svg'));
           startSVGAnimation($(this).siblings('svg'));
