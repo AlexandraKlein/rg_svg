@@ -41,7 +41,16 @@
 
     #logo {
       path {
-        stroke-width: 4;
+        stroke-width: 1;
+        fill: transparent;
+        transition: fill .5s ease .5s;
+        background: transparent;
+      }
+
+      &.animating {
+        path {
+          fill: $black;
+        }
       }
     }
   }

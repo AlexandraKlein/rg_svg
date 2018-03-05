@@ -445,7 +445,12 @@ textarea {
       stroke-linejoin: round;
       stroke-miterlimit: 10; }
   .main #container #logo path {
-    stroke-width: 4; }
+    stroke-width: 1;
+    fill: transparent;
+    transition: fill .5s ease .5s;
+    background: transparent; }
+  .main #container #logo.animating path {
+    fill: #000000; }
 
 @font-face {
   font-family: 'Font-Name';

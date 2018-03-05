@@ -219,9 +219,21 @@
 
 
     $('.svg-container').each(function() {
+
         $(this).find('button').click(function() {
-          replaceWithPaths($(this).siblings('svg'));
-          startSVGAnimation($(this).siblings('svg'));
+          var svg = $(this).siblings('svg');
+          var svgPaths = svg.find('path, line, polyline');
+          var animationDuration = 10 * svgPaths.length;
+
+          replaceWithPaths(svg);
+          startSVGAnimation(svg);
+
+          svg.addClass('animating');
+
+          setTimeout(function() {
+            svg.removeClass('animating');
+          }, animationDuration + 1000);
+
         });
     });
   });
