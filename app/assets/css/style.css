@@ -47,17 +47,8 @@
   font-smoothing: antialiased;
   text-rendering: optimizeLegibility; }
 
-html {
-  font-size: 62.5%;
-  background: radial-gradient(ellipse at center, #f79e3e 0, #c76b08 80%, #965106 100%); }
-
 body {
-  font: 300 12px/1.4 'Helvetica Neue', Helvetica, Arial;
-  color: #fff;
-  transition: all .4s .3s ease-in; }
-
-body, html {
-  min-height: 100vh; }
+  font: 300 12px/1.4 'Helvetica Neue', Helvetica, Arial; }
 
 /*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
 /**
@@ -445,15 +436,14 @@ textarea {
     max-height: 100vh;
     margin: auto;
     display: block; }
-    .main #container svg path {
+    .main #container svg path,
+    .main #container svg .path {
       fill: none;
       stroke: #000000;
       stroke-width: 5;
       stroke-linecap: round;
       stroke-linejoin: round;
       stroke-miterlimit: 10; }
-      .main #container svg path.st1 {
-        stroke-width: 2; }
 
 @font-face {
   font-family: 'Font-Name';

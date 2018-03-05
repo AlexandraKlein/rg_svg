@@ -190,8 +190,8 @@
         $(this).delay(_timeDelay * i).animate({
           'stroke-dashoffset': 0
         }, {
-          duration: Math.floor(Math.random() * _timeMax) + _timeMin
-          , easing: 'easeInOutQuad'
+          duration: Math.floor(Math.random() * _timeMax) + _timeMin,
+          easing: 'easeInOutQuad'
         });
       });
     }

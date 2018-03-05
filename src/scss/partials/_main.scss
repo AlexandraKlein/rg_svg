@@ -28,17 +28,14 @@
       margin: auto;
       display: block;
 
-      path {
+      path,
+      .path {
         fill: none;
         stroke: $black;
         stroke-width: 5;
         stroke-linecap: round;
         stroke-linejoin: round;
         stroke-miterlimit: 10;
-
-        &.st1 {
-          stroke-width: 2;
-        }
       }
     }
   }
